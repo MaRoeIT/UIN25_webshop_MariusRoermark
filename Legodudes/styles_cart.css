@@ -155,6 +155,8 @@ main {
 }
 
 #cart {
+    opacity: 0;
+    transition: ease-in-out .4s;
     background: var(--black);
     color: var(--white);
     position: absolute;
@@ -201,4 +203,8 @@ main {
             }
         }
     }
+}
+
+#cart.visible {
+    opacity: 1;
 }
